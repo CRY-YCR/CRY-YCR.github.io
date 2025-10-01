@@ -1,5 +1,19 @@
 <!-- start custom head snippets -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- MathJax v3: 放在布局 head 里 -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],   // 行内: $...$ 或 \(...\)
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],// 块: $$...$$ 或 \[...\]
+    processEscapes: true,
+    processEnvironments: true
+  },
+  options: {
+    skipHtmlTags: ['script','noscript','style','textarea','pre','code'] // 不在代码块里渲染
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 <!-- end custom head snippets -->
