@@ -200,6 +200,7 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+mathjax: true   # ✅ 告诉 Jekyll 站点启用 mathjax
 
 # Conversion
 markdown: kramdown
@@ -210,8 +211,6 @@ incremental: false
 
 
 # Markdown Processing
-mathjax: true   # <--- 新增这一行，全局启用 MathJax
-
 kramdown:
   input: GFM
   hard_wrap: false
@@ -221,7 +220,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-  math_engine: mathjax   # <--- 新增这一行，告诉 kramdown 用 mathjax 渲染
+  math_engine: mathjax   
 
 
 # Sass/SCSS
