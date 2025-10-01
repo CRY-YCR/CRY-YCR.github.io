@@ -10,4 +10,4 @@ layout: single
 **注:** $Protter$ 的书中,称 $\mathcal{P}$ 是 $predictable$ 的，如果 $\mathcal{P}$ 是 $\Omega\times \mathbb{R}^+$ 上使得所有 $\mathbb{L}$ 中元素关于 $\mathcal{B}(\mathbb{R})$ 可测的最小的 $\sigma$ 代数. 其中 $\mathbb{L}$ 是由所有左连续右极限的适应的过程所构成的集合
 
 **证明**
-test4
+test4444448766666
