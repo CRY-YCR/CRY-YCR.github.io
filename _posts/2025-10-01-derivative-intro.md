@@ -4,10 +4,4 @@ date: 2025-10-01
 layout: single
 ---
 
-
-行内公式：$E = mc^2$
-
-块公式：
-$$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-$$
+这里开始写正文，比如行内公式 $E=mc^2$
