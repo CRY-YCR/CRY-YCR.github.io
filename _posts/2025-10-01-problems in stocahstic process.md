@@ -9,7 +9,7 @@ layout: single
 
 **注:** $Protter$ 的书中,称 $\mathcal{P}$ 是 $predictable$ 的，如果 $\mathcal{P}$ 是 $\Omega\times \mathbb{R}^+$ 上使得所有 $\mathbb{L}$ 中元素关于 $\mathcal{B}(\mathbb{R})$ 可测的最小的 $\sigma$ 代数. 其中 $\mathbb{L}$ 是由所有左连续右极限的适应的随机过程所构成的集合
 
-根据这个定义，很容易产生下面这个问题:\\
+根据这个定义，很容易产生下面这个问题:  
 <span style="color:red">是否所有可预测过程一定是左连续? 答：不一定</span>
 >事实上,固定$t_0 >0$, $X_s = 1_{[0,t_0)}(s)$就是可预测但并不左连续的随机过程，由于$X$取值仅在$\{0,1\}$上，我们只需证明$\{X = 0\} \in \mathcal{P}$即可.有\\
 >
@@ -32,11 +32,9 @@ $$H^n \xrightarrow{u} H \iff |H_t^n(\omega) - H_t(\omega)| \to 0\ \  uniformly\ 
 
 称$H^n \xrightarrow{ucp} H$, 如果对任意$t >0$,有
 $$\sup\limits_{0 \leq s\leq t}|H_x^n - H_s|\xrightarrow{\mathbb{P}} 0 $$
-进而下面的引理成立：\\
-**引理** 在 $ucp$ 所诱导的拓扑结构下，$\mathcal{S}$在$\mathbb{L}$中稠密.\\
-
-**证明**： $(Protter) Theorem \ 10 \ in \ Chapter 2$\\
-
+进而下面的引理成立：
+**引理** 在 $ucp$ 所诱导的拓扑结构下，$\mathcal{S}$在$\mathbb{L}$中稠密.  
+**证明**： $(Protter) Theorem \ 10 \ in \ Chapter 2$  
 **关于命题1的证明<span style="color:red">(没完全解决)</span>**
 **证明** 本想通过从简单过程开始做并推广，但后面发现在由$H^n_{t\wedge T} \xrightarrow{ucp} X_{t\wedge T}$且$H^n \in \mathcal{P}$推出$X_{t\wedge T} \in \mathcal{P}$的过程里遇到了问题，不确定$ucp$收敛能否想逐点收敛一样保持可测性,或许可以通过选取子列逐点收敛的方式来归纳到逐点收敛的情况，不确定.
 
