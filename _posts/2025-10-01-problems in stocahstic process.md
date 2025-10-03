@@ -11,16 +11,18 @@ layout: single
 
 根据这个定义，很容易产生下面这个问题:  
 <span style="color:red">是否所有可预测过程一定是左连续? 答：不一定</span>
->事实上,固定$t_0 >0$, $X_s = 1_{[0,t_0)}(s)$就是可预测但并不左连续的随机过程，由于$X$取值仅在$\left\{0,1\right\}$上，我们只需证明$\left\{X = 0\right\} \in \mathcal{P}$即可.有\\
+>事实上,固定$t_0 >0$, $X_s = 1_{[0,t_0)}(s)$就是可预测但并不左连续的随机过程，由于$X$取值仅在$\{0,1\}$上，我们只需证明$\{X = 0\} \in \mathcal{P}$即可.有\\
 >
 >$$\begin{align*}\{X = 0\} &= \Omega \times [t_0,\infty)\\
 &= \bigcap_{n=1}^{\infty} \Omega \times (t_0 - \frac{1}{n}, \infty) \in \mathcal{P}\\ \end{align*}$$
 >
 >而更一般的，由于逐点极限保持可测性，可以知道所有左连续过程的逐点极限(对任意$t,\omega$)仍在$\mathcal{P}$中,但它不一定左连续,比如上例 $X_{\cdot} = \lim\limits_{n\to \infty}1_{[0,t-\frac{1}{n}]}(\cdot)$ 是右连续的过程.
 
-首先回顾一下关于右连左极的简单过程的定义：设$ 0 = T_0 \leq T_1 \leq \cdots \leq T_n< \infty$是一列递增的停时列，对应的随机变量 $H_i$满足$|H_i| < \infty \ \ a.s $且$H_i \in \mathcal{F}_{T_i}$ ,令
+首先回顾一下关于右连续左极的简单过程的定义:设
+\(0=T_0\le T_1\le \cdots \le T_n<\infty\) 是一列递增的停时,对应的随机变量 \(H_i\) 满足 \(|H_i|<\infty\)\; \(\text{a.s.}\) 且
+\(H_i\in \mathcal{F}_{T_i}\), 令
 
-$$H_t = H_0 1_{0} + \sum_{i=1}^n H_i1_{(T_i, T_{i+1}]}$$
+\[H_t = H_0 1_{0} + \sum_{i=1}^n H_i1_{(T_i, T_{i+1}]}\]
 
 这样的过程称为**简单过程**,记为$\mathcal{S}$.
 
