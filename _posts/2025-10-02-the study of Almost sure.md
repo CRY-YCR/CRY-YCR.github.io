@@ -14,3 +14,5 @@ layout: single
 目标每两天更一篇
 
 ##### $Sigma\ Algebras\  at\ a\ Stopping\ Time$
+
+Mark住： [这里面定理3的证明](https://almostsuremath.com/2009/11/15/stopping-times-and-the-debut-theorem/) (能够直接解决上篇博客中的命题1)
