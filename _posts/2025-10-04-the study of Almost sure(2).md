@@ -18,3 +18,7 @@ $$Y = M^{(1)} + A^{(1)}$$ $$Z = M^{(2)} + A^{(2)}$$
 其中$M^{(1)}, M^{(2)}$均为局部鞅, $A^{(1)},A^{(2)}$为可预测的适应的增过程,且满足$\mathbb{E}[A_{\infty}] < \infty$ (最后的不等式是因为上鞅$Z$是非负，利用Theorem 16, chapter 3, Protter)那么令$A = A^{(1)} - A^{(2)}$是一个可预测的适应的有限变差过程. 且 $$\mathbb{E}[{\int_0^\infty} d|Z_s|] = \mathbb{E}[A^{(1)}_\infty + A^{(2)}_\infty] < \infty $$
 因此可以得到**A实际上是integrable variation的,比原条件更强! 证毕**
 
+**locally integrable variation过程的分解定理**
+
+设有限变差过程$A$是一个locally integrable variation的, 那么存在一个唯一的分解:  
+<span style="color:blue">(个人不熟悉的方法)</span>

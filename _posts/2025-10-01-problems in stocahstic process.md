@@ -31,7 +31,8 @@ layout: single
 $$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s] = M^{T_n}_s$$
 
 这样根据一致可积性和几乎处处收敛，可得:   
-$$M_t^{T_n} \xrightarrow{L^1} M_t$$. 
+$$M_t^{T_n} \xrightarrow{L^1} M_t$$ 
+
 $$M_s^{T_n} \xrightarrow{L^1} M_s$$. 
  进而
  $$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s]
