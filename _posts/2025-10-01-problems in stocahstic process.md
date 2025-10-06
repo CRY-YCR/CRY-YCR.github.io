@@ -18,31 +18,7 @@ layout: single
 >
 >而更一般的，由于逐点极限保持可测性，可以知道所有左连续过程的逐点极限(对任意$t,\omega$)仍在$\mathcal{P}$中,但它不一定左连续,比如上例 $X_{\cdot} = \lim\limits_{n\to \infty}1_{[0,t-\frac{1}{n}]}(\cdot)$ 是右连续的过程.
 
-首先回顾一下关于右连续左极的简单过程的定义:设
-\(0=T_0\le T_1\le \cdots \le T_n<\infty\) 是一列递增的停时,对应的随机变量 \(H_i\) 满足 \(|H_i|<\infty\)\; \(\text{a.s.}\) 且
-\(H_i\in \mathcal{F}_{T_i}\), 令
 
-\[H_t = H_0 1_{0} + \sum_{i=1}^n H_i1_{(T_i, T_{i+1}]}\]
-
-这样的过程称为**简单过程**,记为$\mathcal{S}$.
-
-通过定义向量空间$\mathcal{S}$中的收敛关系，我们可以在$\mathcal{S}$上赋予不同的拓扑结构，进而得到空间的完备性、稠密性等性质(但注意这样得到的拓扑向量空间可能并不能被度量化或赋范)
-
-首先最简单的,可以在$\mathcal{S}$上定义关于$(t,\omega)$一致收敛. 即
-$$H^n \xrightarrow{u} H \iff |H_t^n(\omega) - H_t(\omega)| \to 0\ \  uniformly\  in \ (t,\omega)$$
-其中$Protter$书中关于半鞅的定义就是在这种收敛关系下得到的(page 52)
-
-但收敛关系越强，可延拓性就越差。为了更好的延拓性，还可以定义相对弱一些的收敛关系，如$ucp$收敛(uniformly on compacts in probability). 
-
-称$H^n \xrightarrow{ucp} H$, 如果对任意$t >0$,有
-$$\sup\limits_{0 \leq s\leq t}|H_x^n - H_s|\xrightarrow{\mathbb{P}} 0 $$
-
-进而有下面的引理成立：
-
-**引理** 在 $ucp$ 所诱导的拓扑结构下，$\mathcal{S}$在$\mathbb{L}$中稠密.  
-**证明**：参考 $(Protter) Theorem \ 10 \ in \ Chapter 2$ 
-
->(待解决)这里自然有一个问题，在一致收敛的拓扑结构下$\mathcal{S}$是否$\mathbb{L}$中稠密？若否，能否得到一个反例?
 
 **关于命题1的证明<span style="color:red">(没完全解决)</span>**
 **证明** 本想通过从简单过程开始做并推广，但后面发现在由$H^n_{t\wedge T} \xrightarrow{ucp} X_{t\wedge T}$且$H^n \in \mathcal{P}$推出$X_{t\wedge T} \in \mathcal{P}$的过程里遇到了问题，不确定$ucp$收敛能否想逐点收敛一样保持可测性,或许可以通过选取子列逐点收敛的方式来归纳到逐点收敛的情况，不确定.
@@ -50,14 +26,18 @@ $$\sup\limits_{0 \leq s\leq t}|H_x^n - H_s|\xrightarrow{\mathbb{P}} 0 $$
 
 ##### 命题2  类DL的局部鞅$M_t$一定是鞅.(反之也成立)
 
-困难的原因: 一直在想办法应用(条件)控制收敛定理来证明,但事实上,<span style="color:blue">涉及到"一致可积"的条件是，通过$L^1$收敛做往往才正确</span>. 
+感到困难的原因: 我一直在想办法应用(条件)控制收敛定理来证明,但事实上,<span style="color:blue">涉及到"一致可积"的条件是，通过$L^1$收敛做往往才正确</span>. 
 **证明** 设$T_n$是$M$的局部化序列，对于$s<t$,有
 $$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s] = M^{T_n}_s$$
 
-这样根据一致可积性和几乎处处收敛，可得
-$$M_t^{T_n} \xrightarrow{L^1} M_t$$ 
-$$M_s^{T_n} \xrightarrow{L^1} M_s$$
+这样根据一致可积性和几乎处处收敛，可得:   
+$$M_t^{T_n} \xrightarrow{L^1} M_t$$. 
+$$M_s^{T_n} \xrightarrow{L^1} M_s$$. 
  进而
  $$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s]
  \xrightarrow{L^1}\mathbb{E}[M_t \mid \mathcal{F}_s]$$
  根据<span style="color:blue">$L^1$收敛的极限在a.s.的意义下唯一</span>证明了鞅性. Q.E.D.  
+
+**命题3** 若存在一列停时列$\{\tau_n\}\uparrow \infty$,使得$M^{\tau_n}$是局部鞅，那么$M$也是局部鞅.  
+
+**证明** 这实际上是定理:对[若一个空间$P$是stable的,有$Loc(Loc(P)) = Loc(P)$](https://almostsuremath.com/2009/12/23/localization/)的特例,取P为所有鞅构成的空间即可. Q.E.D.
