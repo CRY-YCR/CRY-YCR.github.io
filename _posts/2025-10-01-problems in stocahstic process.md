@@ -48,4 +48,16 @@ $$\sup\limits_{0 \leq s\leq t}|H_x^n - H_s|\xrightarrow{\mathbb{P}} 0 $$
 **证明** 本想通过从简单过程开始做并推广，但后面发现在由$H^n_{t\wedge T} \xrightarrow{ucp} X_{t\wedge T}$且$H^n \in \mathcal{P}$推出$X_{t\wedge T} \in \mathcal{P}$的过程里遇到了问题，不确定$ucp$收敛能否想逐点收敛一样保持可测性,或许可以通过选取子列逐点收敛的方式来归纳到逐点收敛的情况，不确定.
 
 
+##### 命题2  类DL的局部鞅$M_t$一定是鞅.(反之也成立)
 
+困难的原因: 一直在想办法应用(条件)控制收敛定理来证明,但事实上,<span style="color:blue">涉及到"一致可积"的条件是，通过$L^1$收敛做往往才正确</span>. 
+**证明** 设$T_n$是$M$的局部化序列，对于$s<t$,有
+$$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s] = M^{T_n}_s$$
+
+这样根据一致可积性和几乎处处收敛，可得
+$$M_t^{T_n} \xrightarrow{L^1} M_t$$ 
+$$M_s^{T_n} \xrightarrow{L^1} M_s$$
+ 进而
+ $$\mathbb{E}[M^{T_n}_t \mid \mathcal{F}_s]
+ \xrightarrow{L^1}\mathbb{E}[M_t \mid \mathcal{F}_s]$$
+ 根据<span style="color:blue">$L^1$收敛的极限在a.s.的意义下唯一</span>证明了鞅性. Q.E.D.  
