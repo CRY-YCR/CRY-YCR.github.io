@@ -37,7 +37,7 @@ $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$
 $$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
 $$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$
 
-或更严格的, 取$E_n =\{{(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$, 则$M,\tilde{A}$可写成:  
+或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega) \}$, 则$M,\tilde{A}$可写成:  
 
 $$M:=\sum_{n\geq 1} M^{(n)} \cdot 1_{E_n}. $$
 
