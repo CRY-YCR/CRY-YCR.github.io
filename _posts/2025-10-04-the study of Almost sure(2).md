@@ -1,5 +1,5 @@
 ---
-title: "基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
+title: "test基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
 date: 2025-10-04
 layout: single
 ---
@@ -33,8 +33,10 @@ $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$
 那么变如下**定义整体的$M, \tilde{A}$**：
 $$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
 $$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}. $$
-或更严格的, 取$ E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$,则$M,\tilde{A}$可写成:  
+或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$,则$M,\tilde{A}$可写成:  
+
 $$M:=\sum_{n\geq 1} M^{(n)} \cdot 1_{E_n}. $$
+
 $$\tilde{A}:= \sum_{n \geq 1} \tilde{A}^{(n)}\cdot 1_{E_n}.  $$
 根据上面的论述可知如此定义的$M,A$均良定义. 
 
