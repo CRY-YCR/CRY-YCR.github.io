@@ -1,5 +1,5 @@
 ---
-title: "test基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
+title: "te基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
 date: 2025-10-04
 layout: single
 ---
@@ -32,8 +32,9 @@ $$ M^{(n)} = M^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$
 $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$ 
 那么变如下**定义整体的$M, \tilde{A}$**：
 $$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
-$$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}. $$
-或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$,则$M,\tilde{A}$可写成:  
+$$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$
+
+或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$, 则$M,\tilde{A}$可写成:  
 
 $$M:=\sum_{n\geq 1} M^{(n)} \cdot 1_{E_n}. $$
 
