@@ -1,13 +1,12 @@
 ---
-title: "t基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
+title: "基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
 date: 2025-10-04
 layout: single
 ---
 
 #### 1. [Quasimartingale](https://almostsuremath.com/2012/04/12/quasimartingales/)
 
-**注1** 单独的上鞅或者下鞅无法构成一个向量空间(因为对负的数乘不封闭),但拟鞅全体构成了一个向量空间. 
-
+**注1** 单独的上鞅或者下鞅无法构成一个向量空间(因为对负的数乘不封闭),但拟鞅全体构成了一个向量空间.
 **注2** 对于一个$FV$过程$X_t$来着，若$X_t$的变差的期望在任意$[0,t]$上有限, 即$\mathbb{E}[|X|_t]<\infty$, 那么$X$是一个拟鞅，反之不成立.
 
 
@@ -35,7 +34,7 @@ $$ M^{(n)} = M^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$
 $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$ 
 那么变如下**定义整体的$M, \tilde{A}$**：
 $$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
-$$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$
+$$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$  
 
 或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega) \}$, 则$M,\tilde{A}$可写成:  
 
