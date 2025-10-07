@@ -15,14 +15,20 @@ A quasimartingale $X$ has a unique decomposition $X = M+A$, where $M$ is a local
 
 **证明** 证明重点是$A$ 是locally integrable variation的,即存在一列停时列$\tau_n$使得 $A^{\tau_n}$是integrable variation的. 根据拟鞅的分解定理，$X = Y-Z$, 其中$Y,Z$均为非负上鞅,那么根据Doob Meyer分解，
 
-$$Y = M^{(1)} + A^{(1)}$$ $$Z = M^{(2)} + A^{(2)}$$
+$$Y = M^{(1)} + A^{(1)}$$ 
 
-其中$M^{(1)}, M^{(2)}$均为局部鞅, $A^{(1)},A^{(2)}$为可预测的适应的增过程,且满足$\mathbb{E}[A_{\infty}] < \infty$ (最后的不等式是因为上鞅$Z$是非负，利用Theorem 16, chapter 3, Protter)那么令$A = A^{(1)} - A^{(2)}$是一个可预测的适应的有限变差过程. 且 $$\mathbb{E}[{\int_0^\infty} d|Z_s|] = \mathbb{E}[A^{(1)}_\infty + A^{(2)}_\infty] < \infty $$
+$$Z = M^{(2)} + A^{(2)}$$
+
+其中$M^{(1)}, M^{(2)}$均为局部鞅, $A^{(1)},A^{(2)}$为可预测的适应的增过程,且满足$\mathbb{E}[A_{\infty}] < \infty$ (最后的不等式是因为上鞅$Z$是非负，利用Theorem 16, chapter 3, Protter)那么令$A = A^{(1)} - A^{(2)}$是一个可预测的适应的有限变差过程. 且 
+$$\mathbb{E}[{\int_0^\infty} d|Z_s|] = \mathbb{E}[A^{(1)}_\infty + A^{(2)}_\infty] < \infty $$
+
 因此可以得到**A实际上是integrable variation的,比原条件更强! 证毕**
 
 **locally integrable variation过程的分解定理:**
 设$A$是一个locally integrable variation的有限变差过程, 那么存在一个唯一的分解:  
+
 $$A = M + \tilde{A}$$. 
+
 其中$M$是一个局部鞅, A是一个可预测的有限变差过程. 
 **注**<span style="color:blue"> 此问题出自$Protter$书中$Compensator$这一节，并未给出严格证明. 因为A局部化之后才是quasimartingle, 而我对从局部化之后如何回到整体的证明方法仍不熟悉，故严格写一遍该定理的证明.  </span>
 
@@ -30,13 +36,15 @@ $$A = M + \tilde{A}$$.
 对于任意$n < m$, 有:
 $$A^{\tau_n} = (M^{(m)})^{\tau_n} +(\tilde{A}^{(m)})^{\tau_n}$$. 
 其中$(M^{(m)})^{\tau_n}$为局部鞅,另由[predictable性对stopped process是可遗传的](https://almostsuremath.com/2009/11/15/stopping-times-and-the-debut-theorem/)知$(\tilde{A}^{(m)})^{\tau_n}$可预测,再根据$Protter$书中$Chapter 3$定理15, "既是局部鞅又是可预测的有限变差的过程必为常数"可知:  
-$$ M^{(n)} = M^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$
+$$ M^{(n)} = M^{(m)} \quad on\  \{ t\leq \tau_n\}.$$
+
 $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$ 
 那么变如下**定义整体的$M, \tilde{A}$**：
 $$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
+
 $$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$  
 
-或更严格的, 取$E_n =\{ {(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega) \}$, 则$M,\tilde{A}$可写成:  
+或更严格的, 取$E_n =\{{(\omega, t)}: \tau_{n-1} < t \leq \tau_n(\omega)\}$, 则$M,\tilde{A}$可写成:  
 
 $$M:=\sum_{n\geq 1} M^{(n)} \cdot 1_{E_n}. $$
 
