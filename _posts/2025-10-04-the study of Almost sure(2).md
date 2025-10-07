@@ -18,6 +18,7 @@ $$Y = M^{(1)} + A^{(1)}. $$
 $$Z = M^{(2)} + A^{(2)}. $$
 
 其中$M^{(1)}, M^{(2)}$均为局部鞅, $A^{(1)},A^{(2)}$为可预测的适应的增过程,且满足$\mathbb{E}[A_{\infty}] \lt \infty$ (最后的不等式是因为上鞅$Z$是非负，利用Theorem 16, chapter 3, Protter)那么令$A = A^{(1)} - A^{(2)}$是一个可预测的适应的有限变差过程. 且 
+
 $$\mathbb{E}[{\int_0^\infty} d|Z_s|] = \mathbb{E}[A^{(1)}_\infty + A^{(2)}_\infty] \lt \infty $$
 
 因此可以得到**A实际上是integrable variation的,比原条件更强! 证毕**
@@ -25,7 +26,7 @@ $$\mathbb{E}[{\int_0^\infty} d|Z_s|] = \mathbb{E}[A^{(1)}_\infty + A^{(2)}_\inft
 **locally integrable variation过程的分解定理:**<br>
 设$A$是一个locally integrable variation的有限变差过程, 那么存在一个唯一的分解:  
 
-$$A = M + \tilde{A}$$. 
+$$A = M + \tilde{A}$$ 
 
 其中$M$是一个局部鞅, A是一个可预测的有限变差过程. 
 **注**<span style="color:blue"> 此问题出自$Protter$书中$Compensator$这一节，并未给出严格证明. 因为A局部化之后才是quasimartingle, 而我对从局部化之后如何回到整体的证明方法仍不熟悉，故严格写一遍该定理的证明.  </span>
@@ -39,9 +40,10 @@ $$ M^{(n)} = M^{(m)} \quad on\  \{ t\leq \tau_n\}.$$
 
 $$ \tilde{A}^{(n)} =\tilde{A}^{(m)} \quad on\  \{ t\leq \tau_n\}.  $$ 
 
-那么如下**定义整体的$M, \tilde{A}$**：<br>
+那么如下**定义整体的$M, \tilde{A}$**：
 
-$$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$<br>
+$$M_t := M_t^{(n)}  \quad on \ \{ t\leq \tau_n\}.  $$
+
 $$\tilde{A}_t  := \tilde{A}_t^{(n)} \quad on \ \{ t\leq \tau_n\}.$$  
 
 或更严格的, 取$E_n =\lbrace {(\omega, t)}: \tau_{n-1} \lt t \leq \tau_n(\omega) \rbrace$, 则$M,\tilde{A}$可写成:  
