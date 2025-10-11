@@ -40,7 +40,8 @@ $$\mathcal{K} = \lbrace f_a := e^{-ax} : a \geq 0\rbrace$$
 
 其中$\nu(f) = \int f(x) \nu(dx)$. 
 这样可逐一验证$\mathcal{H}$满足定理1的三个条件,其中测度有限保证了第三个条件成立.  
-因此有$\sigma (\mathcal{K})_{b} $ 1 $\subseteq $2$\mathcal{H} $, 故只需证$1_{ [ c,\infty) }$ 关于$\sigma_(\mathcal{K})_b$ 可测即可,从 
+
+从 
 
 $$\lbrack c,\infty) \in f_a^{-1} ((0,e^{-ac}])$$
 
@@ -51,3 +52,5 @@ $$\lbrack c,\infty) \in f_a^{-1} ((0,e^{-ac}])$$
 若满足**定理1**条件的"性质"$\mathcal{H}$额外具有封闭的乘法结构,则有
 
 $$\sigma (\mathcal{H})_b = \mathcal{H} $$
+
+因此有$\sigma (\mathcal{K})_{b} $ 1 $\subset $2$\mathcal{H} $, 故只需证$1_{ [ c,\infty) }$ 关于$\sigma_(\mathcal{K})_b$ 可测即可,
