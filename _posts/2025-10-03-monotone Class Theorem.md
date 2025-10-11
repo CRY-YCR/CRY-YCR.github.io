@@ -53,4 +53,4 @@ $$\lbrack c,\infty) \in f_a^{-1} ((0,e^{-ac}])$$
 
 $$\sigma (\mathcal{H})_b = \mathcal{H} $$
 
-因此有$\sigma (\mathcal{K})_{b} $ 1 $\subset $2$\mathcal{H} $, 故只需证$1_{ [ c,\infty) }$ 关于$\sigma_(\mathcal{K})_b$ 可测即可,
+因此有 $\sigma(\mathcal{K})_b \subseteq \mathcal{H}$，故只需证 $\mathbf{1}_{[c,\infty)}$ 关于 $\sigma(\mathcal{K})_b$ 可测即可。
