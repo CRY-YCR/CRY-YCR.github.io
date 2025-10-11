@@ -66,7 +66,9 @@ $$(t,\omega) \to (t, \tau(\omega)) \to \tau(\omega) - t$$
 
 每个映射均可测. $Q.E.D.$
 
-**推论** 若$X$是一个$jointly\  measurable$的随机过程, $\tau$是一个$random\ time$, 那么$X^\tau$同样是$jointly\ measurable$的随机过程. 因为
+**推论** 若$X$是一个$jointly\  measurable$的随机过程, $\tau$是一个$random\ time$, 那么$X^\tau$同样是$jointly\ measurable$的随机过程. 
+
+因为
 
 $$X^\tau_t = 1_{\lbrace \tau \leq t\rbrace} X_t + 1_{\lbrace \tau \gt t\rbrace} X_\tau$$
 在第二项中, 由$X\ jointly\  measurable$ 知$X_\tau$ 一定$\mathcal{F}/\mathcal{B}(\mathbb{R})$可测的随机变量，可视为$jointly\  measurable$的过程.
