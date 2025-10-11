@@ -41,7 +41,7 @@ $$\mathcal{K} = \lbrace f_a := e^{-ax} : a \geq 0\rbrace$$
 其中$\nu(f) = \int f(x) \nu(dx)$. 
 这样可逐一验证$\mathcal{H}$满足定理1的三个条件,其中测度有限保证了第三个条件成立.  
 
-因此有$\sigma{(\mathcal{K})}_b \subseteq \mathcal{H}$,故只需证$1_{[c,\infty)]}$关于
+因此有$$\sigma{(\mathcal{K})}_b \subseteq \mathcal{H}$$, 故只需证$$1_{[c,\infty)]}$$关于
 
 $$\lbrack c,\infty) \in f_a^{-1} ((0,e^{-ac}])$$
 
