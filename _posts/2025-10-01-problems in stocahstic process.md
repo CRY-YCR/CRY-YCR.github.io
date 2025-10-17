@@ -20,7 +20,7 @@ layout: single
 
 
 最初曾尝试从简单函数逼近的思路,但没成功,卡在了可测性在ucp收敛的极限下不确定是否保持这一步上.
-**证明** 记
+**证明1**<span style="color:red">(错误,不满足单调类定理有界函数空间的条件)</span> 记
 
 $$\mathcal{H}  = \lbrace X \in \mathcal{P} :for \ all \ stopping \ time \  \tau , X^\tau \in \mathcal{P} \rbrace $$
 

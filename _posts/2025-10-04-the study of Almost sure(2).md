@@ -1,9 +1,11 @@
 ---
-title: "t基于Almost sure的学习笔记(2) (拟鞅相关的知识)"
+title: "基于Almost sure的学习笔记(2) (拟鞅、)"
 date: 2025-10-04
 layout: single
 ---
 
+本文计划学习:
+ [Quasimartingale](https://almostsuremath.com/2012/04/12/quasimartingales/), [Compensators](https://almostsuremath.com/2011/11/22/compensators/)
 #### 1. [Quasimartingale](https://almostsuremath.com/2012/04/12/quasimartingales/)
 
 **注1** 单独的上鞅或者下鞅无法构成一个向量空间(因为对负的数乘不封闭),但拟鞅全体构成了一个向量空间. <br>

@@ -8,7 +8,7 @@ layout: single
 单调类定理和$\pi-\lambda$定理的应用场景不同，前者作用于函数族上，从"比较简单"的函数族所具有“某种性质”推知在由这个函数族所生成的$\sigma$代数下可测的所有函数均具有该性质；后者作用在集族上，用于有类似性质的"比较简单"的小集族推知它所生成的$\sigma-$代数中的任意元素都具有该性质. 
 
 **定义1** 对于一个集合$E$,定义$\mathcal{B}(E)$为所有从$E$到$\mathbb{R}$的映射所构成的空间. 
-**定义2**称一列$\mathcal{B}(E)$中的函数列 $ f_1,\dots f_n $是有界的，如果存在$K\gt 0$,使得对任意$n$, $|f_n| \leq K.$
+**定义2**称一列$\mathcal{B}(E)$中的函数列 $ f_1,\dots f_n $是有一致界的，如果存在$K\gt 0$,使得对任意$n$, $|f_n| \leq K.$
 >$B(E)$有以下性质:
 >1.它对于有界的递增(减)的函数列的的极限是封闭的<span style="color:gray">(一个很显然的性质，在证明中会在哪里有用呢？)</span>. 
 >2.它本身构成了一个$\mathbb{R}$上的代数<span style="color:gray">(即满足是一个向量空间、有一个封闭的双线性的乘法运算以及有乘法单位元 )</span>. 
@@ -22,7 +22,7 @@ layout: single
 设$\mathcal{K} \subseteq \mathcal{B}(E) $对乘法封闭,$\mathcal{H}$为$\mathcal{B}(E)$的子向量空间且满足
 * $\mathcal{K} \subseteq \mathcal{H}$.
 * $1 \in \mathcal{H}$.
-* $\mathcal{H}_+$ 对有界的递增函数列的极限封闭.
+* $\mathcal{H}_+$ 对有一致界的递增函数列的极限封闭.
 则有${\sigma(\mathcal K)_b\subseteq\mathcal H}$
 
 **证明**
@@ -53,3 +53,12 @@ $$\lbrack c,\infty) \in f_a^{-1} ((0,e^{-ac}])$$
 
 $$\sigma (\mathcal{H})_b = \mathcal{H} $$
 
+也就是说,任意关于$\sigma{(\mathcal{H})}$可测的函数就一定具有性质H
+
+**定理1(单调类定理)**
+设$\mathcal{A}$是集合$E$上的一个$\pi$类, $\mathcal{H}\subseteq \mathcal{B}(E)$满足
+* $1_A \in \mathcal{H}, \forall  A \in \mathcal{A}$
+* $1 \in \mathcal{H}$
+* $\mathcal{H}_{+}$ 对有一致界的递增的函数列的极限封闭
+
+那么 $\sigma(A)_b \subseteq H$.
