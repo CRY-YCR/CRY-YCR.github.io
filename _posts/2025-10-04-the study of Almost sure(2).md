@@ -32,6 +32,9 @@ $$A = M + \tilde{A}$$
 其中$M$是一个局部鞅, A是一个可预测的有限变差过程. 
 **注**<span style="color:blue"> 此问题出自$Protter$书中$Compensator$这一节，并未给出严格证明. 因为A局部化之后才是quasimartingle, 而我对从局部化之后如何回到整体的证明方法仍不熟悉，故严格写一遍该定理的证明.  </span>
 
+
+**注** 不能直接对$A$视为两增过程之差做Doob分解定理,因增过程不满足可积性不一定是上鞅, 但采用拟鞅的思想就可以化解这一点,$A$局部是一个拟鞅,因此可以分解,并能证明可以合并到整体.
+
 **证明** 由于$A$是locally integrable variation的, 存在一列停时列$\{\tau_n\} \uparrow \infty$使得$A^{\tau_n}$是integrable variation的, 由 **注2** 知$A^{\tau_n}$是一个拟鞅, 故由$Rao's \ Theorem$知存在分解 $A^{\tau_n} = M^{(n)} + \tilde{A}^{(n)}$. 其中$M^{(n)}$为局部鞅, $\tilde{A}^{(n)}$是一个integrable variation的有限变差过程, $\tilde{A}_0^{(n)} = 0$. 
 对于任意$n \lt m$, 有:
 $$A^{\tau_n} = (M^{(m)})^{\tau_n} +(\tilde{A}^{(m)})^{\tau_n}$$. 
