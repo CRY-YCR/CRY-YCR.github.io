@@ -16,7 +16,7 @@ layout: single
 **定义2** 考虑$E$上的一个$\sigma$-代数 $\mathcal{E}$, 记$\mathcal{E}_b$是$\mathbb{E}$中所有$\mathcal{E}/\mathcal{B}(\mathcal{R})$可测的函数构成的子集合.
 >易知$\mathcal{E}_b$也满足上面的1. 2.性质
 
-对于$\mathcal{E}$上的一个子向量空间$\mathcal{H}$,记$$\mathcal{H}_+ = \{f \in \mathcal{H} : f \geq 0\}$$
+对于$\mathcal{E}_b$上的一个子向量空间$\mathcal{H}$,记$$\mathcal{H}_+ = \{f \in \mathcal{H} : f \geq 0\}$$
 
 **定理1(单调类定理)** 
 设$\mathcal{K} \subseteq \mathcal{B}(E) $对乘法封闭,$\mathcal{H}$为$\mathcal{B}(E)$的子向量空间且满足

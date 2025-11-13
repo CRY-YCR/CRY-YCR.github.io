@@ -32,9 +32,3 @@ Mark住： [这里面定理3的证明](https://almostsuremath.com/2009/11/15/sto
 
 
 ##### [$Predictable\  Stopping\  Time$](https://almostsuremath.com/2009/11/30/predictable-stopping-times/)
-
-> 读之前的思考问题:
->
->1. $Predictable\ Process$和 $Predictable\ Stopping\  times$有什么关系,前者的定义是所有关于由$\mathbb{L}$所生成的 $\sigma-$代数可测的随机过程, 跟后者有什么联系
->2.“一个RCLL过程$X$是拟左连续的 $\iff$ 它所有跳发生的时间都是$totally\  inaccessible$”是否成立.
-

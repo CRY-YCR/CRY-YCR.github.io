@@ -20,13 +20,13 @@ layout: single
 
 
 最初曾尝试从简单函数逼近的思路,但没成功,卡在了可测性在ucp收敛的极限下不确定是否保持这一步上.
-**证明1**<span style="color:red">(错误,不满足单调类定理有界函数空间的条件)</span> 记
+**证明1** 记
 
 $$\mathcal{H}  = \lbrace X \in \mathcal{P} :for \ all \ stopping \ time \  \tau , X^\tau \in \mathcal{P} \rbrace $$
 
 由因为对于任意$X \in \mathbb{L}$和停时$\tau$, $X^\tau \in \mathbb{L}.$ 因此 $\mathbb{L} \subseteq \mathcal{H}.$
 
-又因为$\mathcal{H}$ 满足单调类定理的条件(见单调类定理笔记中定理1,其中第三条可由逐点收敛保持可测性验证)根据单调类定理得到
+又因为$\mathcal{H}$ 满足单调类定理的条件，见单调类定理笔记中定理1,其中第三条可由<span style="color:blue">逐点收敛保持可测性(这一点在验证单调类的条件中常常用到)</span>保证，根据单调类定理得到
 
 $$\mathcal{P} = \sigma(\mathbb{L})_b \subseteq \mathcal{H}$$
 
